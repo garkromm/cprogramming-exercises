@@ -9,13 +9,13 @@ int main()
 {
     // htoi("0x2A");
     printf("%d\n", htoi("0x2A"));
-    printf("%d\n", htoi("0x29A"));
+    printf("%d\n", htoi("0X29A"));
     return 0;
 }
 
 int htoi(const char s[])
 {
-    if (s[0] != '0' && s[1] != 'x')
+    if (s[0] != '0' && tolower(s[1]) != 'x')
     {
         return -1;
     }
