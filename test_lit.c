@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void copy(char *dest, const char *src);
+void copy(char *dest, char *src);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
     return 0;
 }
 
-void copy(char *dest, const char *src)
+void copy(char *dest, char *src)
 {
 
     while ((*dest++ = *src++) != '\0')
