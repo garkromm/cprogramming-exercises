@@ -18,7 +18,7 @@ int main()
 //https://en.wikipedia.org/wiki/Circular_shift
 unsigned rightrot(unsigned x, unsigned n)
 {
-    return x << n | x >> (32 - n);
+    return x << n | x >> (__UINT64_MAX__ - n);
 }
 
 // stolen helper
